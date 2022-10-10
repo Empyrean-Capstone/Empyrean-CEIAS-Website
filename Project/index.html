@@ -71,7 +71,7 @@
                 <div class="main-content">
 		  <h1>Project Description</h1>
 		  <p>
-		    One of Lowell Observatory's primary tools for observing the night sky is their 4.3 meter spectrograph. This spectrograph is controlled manually, with a researcher using the fortran based commands on every clear night in order to get all of the measurments they need. In addition to learning fortran, a spectrograph operator also needs three to four hours to set up the spectrograph. In order to solce this, Empyrean is creating a front-end interface to allow astronomers to automatically configure their spectrograph, gather observations, and provide those observations for viewing later.  
+		    One of Lowell Observatory's primary tools for observing the night sky is their 4.3 meter spectrograph. This spectrograph is controlled manually, with a researcher using the fortran based commands on every clear night in order to get all of the measurments they need. In addition to learning fortran, a spectrograph operator also needs three to four hours to set up the spectrograph. In order to solve this, Empyrean is creating a front-end interface to allow astronomers to automatically configure their spectrograph, gather observations, and provide those observations for viewing later.  
 		  <p>
 		    <figure>
 		      <img style="width: 18%;" src="../static/images/lowell_spectrograph.jpg"/>
@@ -79,6 +79,16 @@
 		    </figure>
 		  <p>
 		    Creating this will allow the astronomers at Lowell to be able to make all of their observations anywhere they have an Internet connection, instead of needing to go into the observatory any time they want to gather data. This will in turn increase the amount of research astronomers can collect by reducing time to learn the spectrograph, as well as decrease the time needed to complete set up each night. This system will also be modular, allowing for other observatories to create accounts for their spectrograph, speeding up their process as well. 
+		  </p>
+
+		  <h1>High Level Requirements</h1>
+		  <p>
+		    For Lowell to receive the product they were envisioning, the following requirements must be filled: sending commands to spectrograph including location data and image request type, tracking users for later use, storing large amounts of data from the spectrograph, creating an API capable of calling fortran commands, showing previouly collected data in an organized format, and being an open source project for other astonomer's use.
+		  <p>
+
+		  <h1>Envisioned Solution</h1>
+		  <p>
+		    At the most general level our project will need a website, an API backend, and a database. The website should include a login and the ability to send commands to the backend and request data from the database. The backend needs to be able to handle requests from the website and send those commands to the spectrograph, locate and retrieve data from the database, and handle the incoming data from the spectrograph. Finally the database should hold large amounts of data and will thus need to be highly scalable for long term use. All code created should be completely open source, allowing other astronomers to use the interface. Finally the project needs to be as modular as possible, which will allow astronomers as Lowell and anywhere else easily link code to the project. |GRAPHICS?|
 		  </p>
 		   
                 </div>
