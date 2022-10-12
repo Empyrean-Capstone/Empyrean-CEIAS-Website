@@ -26,98 +26,6 @@
 	</head>
 
 	<body>
-		<script type="text/javascript" src="../static/js/gantt/loader.js"></script>
-		<script type="text/javascript">
-
-			google.charts.load('current', {'packages': ['gantt']});
-			google.charts.setOnLoadCallback(draw_charts);
-
-			function days_to_ms(days) {
-				return days * 24 * 60 * 60 * 1000;
-			}
-
-			function draw_gantt(rows, div_name) {
-				var chart_display_opts = {
-					height: 700,
-
-					// TODO: figure out how to get width of
-					// screen to make this width val relative
-					width: 1500,
-					gantt: {
-					    labelMaxWidth: 1000,
-						labelStyle: {
-							fontSize: 10,
-						},
-						sortTasks: false
-					}
-				};
-
-				var chart_data = new google.visualization.DataTable();
-
-				chart_data.addColumn('string', 'Task ID');
-				chart_data.addColumn('string', 'Task Name');
-				chart_data.addColumn('date', 'Start Date');
-				chart_data.addColumn('date', 'End Date');
-				chart_data.addColumn('number', 'Duration');
-				chart_data.addColumn('number', 'Percent Complete');
-				chart_data.addColumn('string', 'Dependencies');
-
-				chart_data.addRows(rows);
-
-				var chart = new google.visualization.Gantt(document.getElementById(div_name));
-
-				chart.draw(chart_data, chart_display_opts);
-			}
-
-			function draw_charts() {
-				// see column order in draw_gantt() for the proper
-				// order of the items in these rows
-				var fall_rows = [
-					['startup', 'Team Startup',
-						new Date(2022, 8, 16), null, days_to_ms(7), 100, null],
-
-					['team_docs', 'Standards/Inventory',
-						new Date(2022, 8, 24), new Date(2022, 9, 7), null, 100, null],
-
-					['init_website', 'Initial Website',
-						new Date(2022, 8, 27), new Date(2022, 8, 30), null, 100, "startup"],
-
- 					['mini_intro', 'Mini Intro',
-						new Date(2022, 8, 27), new Date(2022, 9, 14), null, 75, null],
-
- 					['full_website', 'Complete Website',
-						new Date(2022, 9, 4), new Date(2022, 11, 9), null, 20, "startup, init_website"],
-
-					['tech_feas_draft', 'Tech Feasability Draft',
-						new Date(2022, 9, 8), new Date(2022, 9, 28), null, 0, "startup"],
-
- 					['tech_feas_final', 'Tech Feasability Final',
-						new Date(2022, 9, 28), new Date(2022, 10, 11), null, 0, "tech_feas_draft"],
-
-					['poster_draft', 'Presentation Poster Draft',
-						new Date(2022, 10, 4), new Date(2022, 10, 18), null, 0, null],
-
- 					['poster_final', 'Presentation Poster Final',
-						new Date(2022, 10, 18), new Date(2022, 10, 25), null, 0, "poster_draft"],
-
-  					['req_spec_draft', 'Requirements Spec Draft',
-						new Date(2022, 9, 28), new Date(2022, 10, 21), null, 0, null],
-
-					['req_spec_final', 'Requirements Spec Final',
-						new Date(2022, 10, 21), new Date(2022, 11, 9), null, 0, "req_spec_draft"],
-
- 					['mini_video', 'Project Info Mini-Video',
-						new Date(2022, 10, 25), new Date(2022, 11, 9), null, 0, null],
-
-  					['tech_demo', 'Technical Prototypes Demo',
-						new Date(2022, 10, 25), new Date(2022, 11, 9), null, 0, null],
-				]
-
-				draw_gantt(fall_rows, "fall_chart_div")
-				//draw_gantt(spring_rows, "spring_chart_div")
-			}
-		</script>
-
 		<!-- Nav Bar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
 			<div class="container-fluid px-4 px-lg-5">
@@ -153,13 +61,11 @@
 						<hr class="divider" />
 					</div>
 				</div>
-
 				<h3>Fall 2022 Semester</h3>
-				<div id="fall_chart_div"></div>
-
-				<!-- <h3>Spring 2023 Semester</h3> -->
-				<!-- <div id="spring_chart_div"></div> -->
 			</div>
 		</div>
+		<center>
+			<img align="middle" src="../static/images/gantt_fall22.png">
+		</center>
 	</body>
 </html>
