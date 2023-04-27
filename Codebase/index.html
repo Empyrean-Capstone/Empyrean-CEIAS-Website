@@ -1,101 +1,169 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-    <title>Empyrean - Codebase</title>
+	<title>Empyrean - Codebase</title>
 
-    <style>
-        div.masthead {
-            padding-top: 10rem;
-            padding-bottom: calc(10rem - 4.5rem);
-            background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0) 100%),
-                url("../static/images/background.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
+	<style>
+		div.masthead {
+			padding-top: 10rem;
+			padding-bottom: calc(10rem - 4.5rem);
+			background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0) 100%),
+				url("../static/images/background.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
 
-        #mainNav {
-            background: linear-gradient(to bottom, rgba(92, 77, 66, 0), rgba(92, 77, 66, 0.7) 100%);
-            overflow: hidden;
-        }
-    </style>
+		#mainNav {
+			background: linear-gradient(to bottom, rgba(92, 77, 66, 0), rgba(92, 77, 66, 0.7) 100%);
+			overflow: hidden;
+		}
+	</style>
 
-    <!-- Boostrap Core CSS-->
-    <link href="../static/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/content.css">
+	<!-- Boostrap Core CSS-->
+	<link href="../static/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="../static/css/content.css">
 
 
-    <!-- Boostrap Core JS -->
-    <script src="../static/js/bootstrap.js"></script>
+	<!-- Boostrap Core JS -->
+	<script src="../static/js/bootstrap.js"></script>
 </head>
 
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
-        <div class="container-fluid px-4 px-lg-5">
-            <a class="navbar-brand" href="index.html" style="text-decoration: none;"><img
-                    src="../static/images/logo.png" alt="index link" style="width: 50px; height:50;">
-                <span class="align-middle" id="logo-text">Empyrean</span>
-            </a>
+	<!-- Nav Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+		<div class="container-fluid px-4 px-lg-5">
+			<a class="navbar-brand" href="index.html" style="text-decoration: none;"><img
+					src="../static/images/logo.png" alt="index link" style="width: 50px; height:50;">
+				<span class="align-middle" id="logo-text">Empyrean</span>
+			</a>
 
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportContent">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+			<div class="collapse navbar-collapse" id="navbarSupportContent">
+				<ul class="navbar-nav ms-auto my-2 my-lg-0">
 
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Team/index.html">Meet The Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Project/index.html">Project Information</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Document/index.html">Documents</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Codebase/index.html">Codebase</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Resources/index.html">Resources</a></li>
+					<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="../Team/index.html">Meet The Team</a></li>
+					<li class="nav-item"><a class="nav-link" href="../Project/index.html">Project Information</a></li>
+					<li class="nav-item"><a class="nav-link" href="../Document/index.html">Documents</a></li>
+					<li class="nav-item"><a class="nav-link" href="../Codebase/index.html">Codebase</a></li>
+					<li class="nav-item"><a class="nav-link" href="../Resources/index.html">Resources</a></li>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-    <div class="masthead">
-        <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Project</h1>
-                    <hr class="divider divider-light" />
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white mb-5 font-weight-bold">Click below to visit our github</p>
-                    <a href="https://github.com/Empyrean-Capstone/Empyrean">
-                        <img src="../static/images/Github.png" alt="GitHub link" style="max-width: 50%;">
-                    </a>
-                    <p></p>
-                    <p class="text-white mb-5 font-weight-bold">Or, click here to download the project as a .zip</p>
-                    <button type="button"
-                        style="background-color: white; width: 100px; height: 50px; border-style: rounded;"><a
-                            href="./Empyrean.zip" download="Empyrean.zip">.zip</a></button>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="masthead">
+		<div class="container px-4 px-lg-5 h-100">
+			<div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+				<div class="col-lg-8 align-self-end">
+					<h1 class="text-white font-weight-bold">Project</h1>
+					<hr class="divider divider-light" />
+				</div>
+				<div class="col-lg-8 align-self-baseline">
+					<p class="text-white mb-5 font-weight-bold">Click below to visit our github</p>
+					<a href="https://github.com/Empyrean-Capstone/Empyrean">
+						<img src="../static/images/Github.png" alt="GitHub link" style="max-width: 50%;">
+					</a>
+					<p></p>
+					<p class="text-white mb-5 font-weight-bold">Or, click here to download the project as a .zip</p>
+					<button type="button"
+						style="background-color: white; width: 100px; height: 50px; border-style: rounded;"><a
+							href="./Empyrean-0.1.zip" download="Empyrean.zip">.zip</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <br><br>
-    <div class="main-content">
-        <h1 class="content-header">Demo (Coming Soon)</h1>
-        <video style="width: 100%; display: none;" controls>
-            <source src="demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+	<br><br>
+	<div class="main-content">
+		<h1 class="content-header">Demo</h1>
+		<p>Below is a brief demo of the minimum viable product for version
+			0.1. This MVP provides the primary workflow of our client, which we
+			detail below.
+		</p>
+		<br>
+		<p>
+			The entrance to our application is the login system, which allows
+			us to do things like restrict usage of the astronomical instruments
+			to approved users And display past activity to the user, such as
+			their past observations.
 
-    <br><br><br>
+			After logging in, the user is redirected to the main page, which
+			offers most of the functionality for this primary workflow via the
+			observation request form, status display, and log sheet display.
+		</p>
+		<img src="./login-demo.gif" height="auto" width="100%" />
 
-    </div>
-    </div>
+		<br><br>
+		<p>
+			The request functionality allows for the user to find a celestial
+			object they want to view and provide instructions to the
+			instruments on how to view it.
+		</p>
+		<ol>
+			<li>
+				The buttons at top tell the spectrograph what type of image to
+				take.
+			</li>
+			<li>
+				The "Resolve" field allows the user to gather data about the chosen
+				object, such as its celestial coordinates or its visibility at the
+				user’s location.
+			</li>
+			<li>
+				The fields at bottom instruct the camera on how many exposures to
+				take and how long each should be.
+			</li>
+		</ol>
+		<img src="./observe-demo.gif" height="auto" width="100%" />
 
+		<br><br>
+		<p>
+			After the form is populated and submitted, we can view the status display and log sheets provide real-time
+			status updates about the current job.
+		</p>
+		<ol>
+			<li>
+				The status component offers information such as whether the system is busy, what kind of image is being
+				taken, and how far into the job the camera is.
+			</li>
+			<li>
+				The Log sheet displays information about each exposure in the observation request, such as whether it is
+				complete or not. All those that are incomplete can be terminated.
+			</li>
+		</ol>
+		<img src="./status-demo.gif" height="auto" width="100%" />
+
+		<br><br>
+		<p>
+			The system also allows the user to query past observations.
+		</p>
+
+		<ol>
+			<li>
+				First, the user can search using pattern matching on substrings, allowing them to find all past
+				observations
+				with a certain pattern in the target name, for example.
+			</li>
+			<li>
+				Secondly, we may perform more advanced searches using the date of observation, allowing us to find what
+				observations were taken over the course of a time period, such as a work week.
+			</li>
+		</ol>
+		<img src="./query-demo.gif" height="auto" width="100%" />
+	</div>
+
+	<br><br><br>
+
+	</div>
+	</div>
 </body>
 
 </html>
